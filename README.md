@@ -24,7 +24,7 @@ These are frequently used commands for everyday Docker operations:
 | `docker search`   | Search Docker Hub for images.                               |  
 | `docker version`  | Show the Docker version information.                        |  
 | `docker info`     | Display system-wide information.                            |  
-
+| `docker run -it`  | Start a new container interactively.                        |
 ---
 
 ## 🔧 Management Commands  
