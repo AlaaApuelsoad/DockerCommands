@@ -77,7 +77,7 @@ These commands offer advanced features for working with containers and images:
 | `docker tag`      | Create a new tag for an image.                              |  
 | `docker update`   | Update configuration of one or more containers.             |  
 | `docker wait`     | Block until a container stops, then print its exit code.    |  
-
+| `docker start`    | Start and existing container                                |
 ---
 
 ## 📘 Additional Resources  
