@@ -82,6 +82,10 @@ These commands offer advanced features for working with containers and images:
 | `docker update`   | Update configuration of one or more containers.             |  
 | `docker wait`     | Block until a container stops, then print its exit code.    |  
 | `docker start`    | Start and existing container                                |
+| `docker stop $(docker ps -q) ` | Stop all running docker container.             |
+| `docker rm $(docker ps -aq)`   | Deleting all containers.                       |
+| `docker run -d --name CName imageName` | run container with image and name it.  |
+| `docker rmi -f $(docker images -q)`  | Remove all images.                       |
 ---
 
 ## 📘 Additional Resources  
