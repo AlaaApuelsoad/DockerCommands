@@ -28,6 +28,7 @@ These are frequently used commands for everyday Docker operations:
 | `docker run-d`    | Run container in the background.                            |
 |`docker run -it bash`  | Run container and access it.                            |
 |`docker run..sleep 20` | Run container for 20sec.                                | 
+|`docker exec .. cat..` | Run command inside a running contianer.                 |
 ---
 
 ## 🔧 Management Commands  
