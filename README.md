@@ -26,7 +26,7 @@ These are frequently used commands for everyday Docker operations:
 | `docker info`     | Display system-wide information.                            |  
 | `docker run -it`  | Start a new container interactively.                        |
 | `docker run-d`    | Run container in the background.                            |
-|`docker run -it `  | Run container and access it.                                | 
+|`docker run -it bash`  | Run container and access it.                                | 
 ---
 
 ## 🔧 Management Commands  
