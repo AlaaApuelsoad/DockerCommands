@@ -31,7 +31,7 @@ These are frequently used commands for everyday Docker operations:
 |`docker exec .. cat..` | Run command inside a running contianer.                 |
 ---
 
-## 🔧 Management Commands  
+## Management Commands  
 Use these commands to manage different Docker components:  
 
 | Command             | Description                                               |  
