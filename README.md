@@ -1,13 +1,13 @@
-# 📦 Docker Command Reference  
+# Docker Command Reference  
 
-## 📖 Introduction to Docker  
+## Introduction to Docker  
 Docker is a platform designed to make it easier to develop, deploy, and run applications by using containers. Containers are lightweight, portable, and ensure consistency across various environments.  
 
 This guide provides a categorized list of Docker commands to help you manage containers, images, networks, and more efficiently.  
 
 ---
 
-## 🛠️ Common Docker Commands  
+## Common Docker Commands  
 These are frequently used commands for everyday Docker operations:  
 
 | Command           | Description                                                 |  
@@ -46,7 +46,7 @@ Use these commands to manage different Docker components:
 
 ---
 
-## ⚙️ Swarm Commands  
+##  Swarm Commands  
 Manage Docker Swarm, Docker’s native clustering and orchestration tool:  
 
 | Command      | Description                                                     |  
@@ -55,7 +55,7 @@ Manage Docker Swarm, Docker’s native clustering and orchestration tool:
 
 ---
 
-## 📂 Additional Commands  
+## Additional Commands  
 These commands offer advanced features for working with containers and images:  
 
 | Command           | Description                                                 |  
@@ -88,7 +88,7 @@ These commands offer advanced features for working with containers and images:
 | `docker rmi -f $(docker images -q)`  | Remove all images.                       |
 ---
 
-## 📘 Additional Resources  
+## Additional Resources  
 - [Docker Documentation](https://docs.docker.com)  
 - [Docker Hub](https://hub.docker.com)  
 
