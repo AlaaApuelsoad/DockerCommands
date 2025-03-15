@@ -86,6 +86,7 @@ These commands offer advanced features for working with containers and images:
 | `docker rm $(docker ps -aq)`   | Deleting all containers.                       |
 | `docker run -d --name CName imageName` | run container with image and name it.  |
 | `docker rmi -f $(docker images -q)`  | Remove all images.                       |
+|`docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <containerId>`| Container IP |    
 ---
 
 ## Additional Resources  
