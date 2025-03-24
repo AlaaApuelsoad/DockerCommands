@@ -125,7 +125,18 @@ Manage Docker Swarm (native clustering and orchestration tool):
 
 ---
 
+## File Management Commands inside a Container  
+These commands help list and access files inside a running Docker container:
+
+| Command                                      | Description                                      |
+|---------------------------------------------|------------------------------------------------|
+| `docker exec -it <container> ls /path`      | List files in a specific directory.            |
+| `docker exec -it <container> find / -name "<file>"` | Search for a file inside the container.  |
+| `docker exec -it <container> cat /path/file` | View the content of a file.                    |
+| `docker exec -it <container> more /path/file` | View file content page by page.                |
+| `docker exec -it <container> less /path/file` | Scroll through a file's content.               |
+| `docker exec -it <container> vi /path/file`  | Open a file with the `vi` editor.              |
+
 ## Additional Resources  
 - [Docker Documentation](https://docs.docker.com)  
 - [Docker Hub](https://hub.docker.com)  
-
