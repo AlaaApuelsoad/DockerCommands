@@ -89,6 +89,7 @@ Manage Docker volumes using these commands:
 | `docker volume create <name>`    | Create a new volume.                                      |  
 | `docker volume inspect <name>`   | Get details of a volume.                                  |  
 | `docker volume rm <name>`        | Remove a volume.                                          |  
+|`docker run -v /hostdir:/containerdir <Container name>` | Volume mapping.                      |
 
 ---
 
