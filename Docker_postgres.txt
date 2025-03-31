@@ -1,0 +1,47 @@
+-- Using Postgres with pgadmin on docker --
+
+
+//create docker network to make container communicate with each other
+--> docker network create {network name} --> docker network create aabouelsoud 
+--> docker inspect network aabouelsoud // inspect network 
+
+//pull postgres image 
+--> docker pull postgres:latest
+
+//Run postgres container on network  
+--> docker run --name postgres-container --network aabouelsoud -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=hggi -e POSTGRES_DB=postgres -p 5432:5432 -d postgres
+
+//pull pgadmin image 
+--> docker pull dpage/pgadmin4
+
+//run pgadmin on the same network
+--> docker run --name pgadmin-container --network aabouelsoud -e PGADMIN_DEFAULT_EMAIL={your-email} -e PGADMIN_DEFAULT_PASSWORD={your-pass} -p 5050:80 -d dpage/pgadmin4
+
+//pull redis image
+--> docker pull redis:latest
+run redis on the same network aabouelsoud
+--> docker run --name redis-container --network aabouelsoud -p 6379:6379 -d redis:latest
+
+
+
+//Access pgAdmin
+Open your browser and go to: http://localhost:5050
+Log in with:
+Email: pgadmin username
+Password: pgadmin password
+
+
+//Add a PostgreSQL Server in pgAdmin
+Name: Postgres Server (or any name you like)
+Connection Tab:
+Host: postgres_container (Container name)
+Port: 5432
+Username: postgres username
+Password: postgres password
+Maintenance database: mydatabase
+
+
+
+//inspect process works on your machine
+netstat -ano | findstr :5432
+
