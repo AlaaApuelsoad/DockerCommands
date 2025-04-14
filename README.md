@@ -31,6 +31,47 @@ The Docker Daemon (dockerd) is the background service that runs on your machine 
 
 --- 
 
+
+# 🐳 Docker Architecture
+
+Docker is a containerization platform that uses a **client-server architecture** to build, ship, and run applications inside containers.
+
+---
+
+## 🧱 Architecture Components
+
+### 1. Docker Client (`docker`)
+- The main interface to interact with Docker.
+- Sends commands to the Docker Daemon using the Docker REST API.
+- Examples: `docker build`, `docker run`, etc.
+
+### 2. Docker Daemon (`dockerd`)
+- Runs in the background on the host system.
+- Manages Docker objects: containers, images, volumes, and networks.
+- Listens for API requests from the Docker client.
+
+### 3. Docker Images
+- Read-only templates used to create containers.
+- Built from a `Dockerfile`.
+- Can be stored in Docker registries.
+
+### 4. Docker Containers
+- Executable instances of Docker images.
+- Lightweight and isolated.
+- Share the host OS kernel but have their own filesystem and processes.
+
+### 5. Docker Registries
+- Central repositories for storing and sharing Docker images.
+- **Docker Hub** is the default public registry.
+- Supports private registries like **Harbor**, **GitHub Container Registry**, **AWS ECR**, etc.
+
+### 6. Docker Engine
+- The core of Docker.
+- Includes the **Docker Daemon**, **Docker CLI**, and **REST API**.
+- Manages the entire lifecycle of containers.
+
+---
+
 ### **This guide provides a categorized list of Docker commands to help you efficiently manage containers, images, networks, and more***
 
 
