@@ -1,0 +1,29 @@
+--create you own docker registry 
+docker run -d -p 5000:5000 --name my-registry registry:2
+
+--build your image 
+docker build -t your-image-name .
+
+
+--tag an image when you tag your image it must contain the registry domain 
+docker image tag <my-image> localhost:5000/<my-image>
+
+--push image to your own local registry
+docker push localhost:5000/<my-image>
+
+--to pull an image from your own local registry 
+docker pull localhost:5000/<image name>
+
+
+--list all the process running on that container 
+docker exec <containerId> ps -eaf
+
+
+--interactive shell inside the container 
+docker exec -it <container_name_or_id> sh or bash
+
+ls
+cat
+
+--show container logs
+docker logs <container_name_or_id>
