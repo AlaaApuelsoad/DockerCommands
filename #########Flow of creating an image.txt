@@ -1,0 +1,45 @@
+#########Flow of creating an image and push it to docker hub
+
+1** Write a Docker file 
+
+FROM openjdk:17-jdk-alpine
+
+WORKDIR /app
+
+COPY target/jar file name jar file name
+
+EXPOSE 8080
+
+ENTRYPOINT ["java","-jar","jar file name"]
+
+--> mvn clean package to create a jar file
+
+
+2**Build the image locally
+
+--> docker build -t <your desired image name> .
+
+
+3**Confirm it built successfully 
+--> docker images
+
+3** Tag the image for Docker Hub
+Docker Hub expects images to be named like <username>/<repo>:<tag>. To prepare your local image:
+--> docker tag <your image name> <username>/<repo>:<tag> 
+like 
+docker tag hello-docker-app:latest alaaapuelsoad/hello-docker:latest
+
+4** may be you will need to login 
+docker login
+
+5**Push the image
+docker push <our tag image in step3>
+
+
+6** Verify and pull elsewhere
+
+
+################################################################333
+
+
+
