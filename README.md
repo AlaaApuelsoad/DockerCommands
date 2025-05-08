@@ -36,8 +36,6 @@ The Docker Daemon (dockerd) is the background service that runs on your machine 
 
 Docker is a containerization platform that uses a **client-server architecture** to build, ship, and run applications inside containers.
 
----
-
 ##  Architecture Components
 
 ### 1. Docker Client (`docker`)
