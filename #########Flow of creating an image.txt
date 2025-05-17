@@ -41,5 +41,6 @@ docker push <our tag image in step3>
 
 ################################################################333
 
-
+know the os for image
+docker run <Image name> cat /etc/*release*
 
